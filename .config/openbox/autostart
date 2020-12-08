@@ -1,0 +1,28 @@
+# Autostart Apps
+
+# Compositor
+(picom -b --experimental-backends --backend glx --config $HOME/.config/picom/picom.conf &) &&
+
+# LX Session
+lxpolkit &
+
+# Desktop && File daemon
+(pcmanfm --desktop && sleep 2 && pcmanfm -d) &
+
+# Notifications
+dunst &
+
+# Bar
+tint2 &
+
+# Applets
+(nm-applet &) && sleep 2 && (volumeicon &) && sleep 2 && (parcellite &)
+
+# Keyboard LEDs
+g213-led -a 458588 &
+
+# Compose key to the right CTRL
+setxkbmap -option compose:rctrl &
+
+# VNC
+x0vncserver -rfbauth ~/.vnc/passwd
