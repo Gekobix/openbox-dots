@@ -13,5 +13,8 @@ Needed:
 - termite
 - pfetch
 - lolcat
+- ttf-dejavu
+- ttf-font-awesome
+- ttf-liberation
+- ttf-roboto-mono
 - (some bash things if you want, check bashrc)
-

@@ -1,4 +1,4 @@
-#include "~/.xfiles/themes/gruvbox-hard"
+#include "/home/<your username>/.xfiles/themes/gruvbox-hard"
 
 *.foreground:  FOREGROUND
 *.background:  BACKGROUND
